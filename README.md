@@ -80,5 +80,6 @@ yarn test # executar testes unitários
 * A capacidade de criar interfaces utilizando boas praticas é sempre um diferencial interessante
 * Fique a vontade para inovar ou mostrar as coisas que você mais goste
 * Se divirta
+* Qualquer problema entre em contato com a gente.
 
 ## Boa Sorte! 🍀🍀🍀🍀
