@@ -25,7 +25,7 @@ Criar uma página web que organize a leitura dos artigos da revista HealthCare.
 * Sua solução deve ter no mínimo 3 páginas obrigátorias que estão disponíveis no nesse figma https://www.figma.com/file/U67le6ZsSSb0XOgU4F7COC/Est%C3%A1gio-%2F-2022.1?node-id=2%3A274 e ao menos mais 1 tela de livre escolha e no máximo 2 para organização dos artigos.
 
 ### Tecnologias
-* Fique a vontade para utilizar qualquer framework ou nenhum.
+* Fique a vontade para utilizar qualquer framework ou nenhum. Esse projeto foi feito em cima de React mas se quiser utilizar outro de sua preferência ou apenas CSS e Java Script, vamos avaliar também.
 * Temos uma recomendação de Framework para você, mas só use se você se sentir a vontade em trabalhar com eles. Preferencialmente use React.
 
 ### Telas A serem desenvolvidas
