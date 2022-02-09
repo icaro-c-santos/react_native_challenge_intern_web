@@ -66,8 +66,8 @@ Criar uma página web que organize a leitura dos artigos da revista HealthCare.
 
 * Node v16.11.1 (recomendamos instalar via [NVM](https://github.com/creationix/nvm))
 * [React CLI](https://www.npmjs.com/package/react-cli)
-* [Npm](https://www.npmjs.com/)
-* [Yarn](https://yarnpkg.com)
+* [NPM](https://www.npmjs.com/)
+* [Yarn](https://yarnpkg.com)  (Opcional apenas se não quiser utilizar o NPM)
 
 #### Comandos para executar o projeto 🏗
 
