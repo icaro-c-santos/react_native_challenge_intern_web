@@ -79,6 +79,8 @@ npm start # iniciar o metro bundler + abrir web
 npm test # executar testes unitários
 ```
 
+Ou...
+
 ```bash
 yarn # instalar dependências
 yarn start # iniciar o metro bundler + abrir web
