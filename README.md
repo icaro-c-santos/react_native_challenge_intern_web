@@ -64,13 +64,20 @@ Criar uma página web que organize a leitura dos artigos da revista HealthCare.
 
 ## Dependências 🏬
 
-* Node v16.11.1 (recomendo instalar via [NVM](https://github.com/creationix/nvm))
+* Node v16.11.1 (recomendamos instalar via [NVM](https://github.com/creationix/nvm))
 * [React CLI](https://www.npmjs.com/package/react-cli)
+* [Npm](https://www.npmjs.com/)
 * [Yarn](https://yarnpkg.com)
 
 #### Comandos para executar o projeto 🏗
 
 Em um terminal:
+
+```bash
+npm install # instalar dependências
+npm start # iniciar o metro bundler + abrir web
+npm test # executar testes unitários
+```
 
 ```bash
 yarn # instalar dependências
