@@ -1,6 +1,10 @@
 # Sanar Intern Challenge Web
 Este é um desafio que vai ajudar a identificar seus pontos fortes como uma pessoa desenvolvedora web na Sanar.
 
+<div align="center">
+  <img src="screenshot_initial_project_web.png" alt="Foto do Projeto Inicial" height="350" width="560"/>
+</div>
+
 `
 O objetivo desse desafio é construir um web app responsivo e com isso demonstrar suas habilidades técnicas e domínio de linguagensm frameworks e dominio técnico na construção de algoritmos e utilização de estrutura de dados.
 `
