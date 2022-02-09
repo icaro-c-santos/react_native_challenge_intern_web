@@ -1,23 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LogoSanar from './components/LogoSanar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <LogoSanar/>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Acessos a milhares de artigos online.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          className="Button"
         >
-          Learn React
-        </a>
+          Começar
+        </button>
       </header>
     </div>
   );

@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Sanar Intern Challenge Web
+Este é um desafio que vai ajudar a identificar seus pontos fortes como uma pessoa desenvolvedora web na Sanar.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`
+O objetivo desse desafio é construir um web app responsivo e com isso demonstrar suas habilidades técnicas e domínio de linguagensm frameworks e dominio técnico na construção de algoritmos e utilização de estrutura de dados.
+`
 
-## Available Scripts
+## Problema: ❓
 
-In the project directory, you can run:
+As usuárias da sanar são super profissionais que desejam impactar e revolucionar a sáude do mundo, para isso será necessário que elas estudem bastante
+com os artigos mais renomados publicados na revista HealthCare, essa revista publica varios artigos e o recomendado é que as profissionais realizem uma leitura diária. Porém elas estão ocupadas em suas rotinas que podem ser dentro de salas de aulas, realizando a residência médica ou realizando atendimentos, com isso elas estão longe de seus escritórios ou local de estudos e não estão conseguindo se atualizar. Nossa super PO e lideranças estratégicas identificaram que um novo produto, sendo mais específico uma pagina web que pode ser acessada pelo celular pode resolver essa dor.
 
-### `yarn start`
+## Solução 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Criar uma página web que organize a leitura dos artigos da revista HealthCare.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instruções 📖
 
-### `yarn test`
+* Prefira realizar o seu próprio código do que utilizar bibliotecas ou componentes prontos.
+* Fazer o uso dos artigos da API: 'https://www.healthcare.gov/api/articles.json'.
+* Sua solução deve ter no mínimo 3 páginas obrigátorias que estão disponíveis no nesse figma https://www.figma.com/file/U67le6ZsSSb0XOgU4F7COC/Est%C3%A1gio-%2F-2022.1?node-id=2%3A274 e ao menos mais 1 tela de livre escolha e no máximo 2 para organização dos artigos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tecnologias
+* Fique a vontade para utilizar qualquer framework ou nenhum.
+* Temos uma recomendação de Framework para você, mas só use se você se sentir a vontade em trabalhar com eles. Preferencialmente use React.
 
-### `yarn build`
+### Telas A serem desenvolvidas
+1. Boas Vindas
+2. Login
+3. Registro
+4. Primeira tela de artigos (Bônus)
+5. Segunda tela de artigos  (Bônus)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Regras de validação do campo de senha 🔑
+1. Pelo menos 1 caractere maiúsculo.
+2. Pelo menos 1 caractere minúsculo.
+3. Pelo menos 1 dígito.
+4. Pelo menos 1 caractere especial.
+5. Mínimo de 8 caracteres.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Regras de validação do campo do email 📧
+1. @ simbolo.
+2. Nome do domínio (Ex: sanar.com).
+3. Nome do receptor (Ex: developer).
+4. Digitos de 0 até 9
+5. apenas os caracteres especiais: Ponto (.), Underline (_), Hífen (-) e Mais (+).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Recomendações 🌈
+* Você deve usar os métodos do arquivo loginAPI para criar uma nova usuária ⭐️
+* Você deve usar os métodos do arquivo loginAPI para realizar a autenticação do login ⭐️
+* Você deve usar a API da HealthCare do governo dos USA como nossa provedora de artigos https://www.healthcare.gov/api/articles.json ⭐️
+* Faça o uso de bibliotecas como Axios ou Fetch para requisições http ⭐️
+* Codem pensando na melhor experiência da usuária ♥️
 
-### `yarn eject`
+## Entrega 📦
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Criar uma conta no GitHub e fazer um fork desse projeto 1️⃣
+* Commitar o código fonte 2️⃣
+* Dar acesso as pessoas X para realizar a revisão de código 3️⃣
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependências 🏬
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Node v16.11.1 (recomendo instalar via [NVM](https://github.com/creationix/nvm))
+* [React CLI](https://www.npmjs.com/package/react-cli)
+* [Yarn](https://yarnpkg.com)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Comandos para executar o projeto 🏗
 
-## Learn More
+Em um terminal:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+yarn # instalar dependências
+yarn start # iniciar o metro bundler + abrir web
+yarn test # executar testes unitários
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dicas ⌨️
+
+* Um código bem organizado e seguindo algum padrão de projeto é sempre bem vindo
+* A capacidade de criar interfaces utilizando boas praticas é sempre um diferencial interessante
+* Fique a vontade para inovar ou mostrar as coisas que você mais goste
+* Se divirta
+
+## Boa Sorte! 🍀🍀🍀🍀
