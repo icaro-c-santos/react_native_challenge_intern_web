@@ -60,7 +60,7 @@ Criar uma página web que organize a leitura dos artigos da revista HealthCare.
 
 * Criar uma conta no GitHub e fazer um fork desse projeto 1️⃣
 * Commitar o código fonte 2️⃣
-* Dar acesso as pessoas X para realizar a revisão de código 3️⃣
+* Dar acesso as pessoas: @csmonteiro @jacksonsmith, @hellintonklein, @RaiVolt. Para realizare a revisão de código 3️⃣
 
 ## Dependências 🏬
 
