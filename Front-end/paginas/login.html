@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_login&cadastro.css">
+    <script src="../scripts/login.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+    
+    <div class="voltar">
+      <a target="_self" href="index.html"><img src="../pictures/SETA.png"  style="width: auto;" alt="SETA VOLTAR" title="SETA VOLTAR"></a> 
+      <p>Login</p>
+    </div>
+   
+    <header> 
+        <picture>
+            <source media="(min-width:500px)" srcset="../pictures/logo-sanar-grande.png">
+            <img src="../pictures/logo-sanar-pequeno.png"  style="width: auto;" alt="LOGO DA SANAR" title="LOGO DA SANAR">
+          </picture>
+        </header>
+
+
+        <picture class="login">
+            <source media="(min-width:500px)" srcset="../pictures/AVATAR-LOGIN-GRANDE.png">
+            <img src="../pictures/AVATAR-LOGIN-PEQUENO.png" alt="AVATAR DE UM BONECO." style="width: auto;"  title="AVATAR DE UM BONECO.">
+          </picture>
+   
+
+    <form  id="form">
+        <input type="email"  name="email"  id="email" aria-label="DIGITE SEU EMAIL." title="email" placeholder="Digite seu e-mail">
+        <input type="password"  name="senha"  id="senha" aria-label="DIGITE SUA SENHA" title="senha" placeholder="Digite sua senha de acesso">
+        <button type="button" name="entrar" id="entrar"  onclick="login()" title="ENTRAR" aria-label="ENTRAR">Entrar</button>
+
+    <p>Não possui um acesso? <a target="_self" href="./cadastro.html">Cadastre-se aqui.</a></p>
+
+    </form>
+   
+</body>
+</html>
