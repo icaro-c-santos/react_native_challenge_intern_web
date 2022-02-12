@@ -1,6 +1,4 @@
 
-
-
 const user = "ICARO";
 
 user.senha = 8245;

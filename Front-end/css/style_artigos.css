@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(0,80,240);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 180px;
+}
+
+header{
+
+    font-size: 2em;
+    font-weight: 700;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1{
+    margin-top: 0px;
+}
+.voltar{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0px 20px;
+}
+.voltar >p{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.texto::placeholder{
+   text-align: center;
+   font-size: 20px;
+}
+.texto{
+    width: 400px;
+    height: 50px;
+    font-size: 22px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+}
+
+#artigosTela{
+    font-size: 20px;
+    text-align: justify;
+    justify-content: center;
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+}
+#artigosTela > h1{
+    font-size: 30px;
+    text-align: center;
+    
+}
+@media (max-width: 500px)
+{
+
+
+}

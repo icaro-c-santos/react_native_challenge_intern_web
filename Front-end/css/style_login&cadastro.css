@@ -5,6 +5,7 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .voltar{
@@ -20,8 +21,9 @@ body{
     font-weight: bold;
 }
 
-header{
-    margin-bottom: 30px;
+p{
+    margin: 0px;
+    padding: 0px;
 }   
 
 form{
@@ -68,6 +70,7 @@ form{
 form>p{
     color: rgb(235, 230, 230);
     text-align: center;
+    margin-top: 4px;
 }
 
 form >p >a{

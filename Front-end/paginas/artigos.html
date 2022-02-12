@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link rel="stylesheet" href="../css/style_artigos.css">
     <title>ARTIGOS</title>
-    <script>
-        alert("validação Necessaria");
+   <script src="../scripts/artigos.js"></script>
+   <script>
+      //  alert("validação Necessaria");
+   
     </script>
 </head>
-<body>
 
+<body>
+    <div class="voltar">
+        <a target="_self" href="index.html"><img src="../pictures/SETA.png"  style="width: auto;" alt="SETA VOLTAR" title="SETA VOLTAR"></a> 
+        <p>Sair</p>
+    </div>
+    <header>  
+       <picture>
+           <source media="(min-width:500px)" srcset="../pictures/logo-sanar-grande.png">
+           <img src="../pictures/logo-sanar-pequeno.png"  style="width: auto;" alt="LOGO DA SANAR" title="LOGO DA SANAR">
+       </picture>
+   
+       <h1>BUSQUE AQUI O SEU ARTIGO</h1>
+       <div id="artigosTela"></div>
+   </header>
+   
+    <form action="">
+        <input class="texto" type="text" name="artigo" id="artigo" aria-label="DIGITE O NOME DO ARTIGO" placeholder="DIGITE O ARTIGO">
+        <button type="button" onclick="buscarArtigo()" >Pesquisar</button>
+    </form>
     
+
 </body>
 </html>
