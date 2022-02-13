@@ -1,12 +1,7 @@
+const server = "http://localhost:3002";
+
 function alerte(mensagem){
         alert(mensagem);
-}
-
-async function loginUsuario(email,senha){
-        const user = email;
-        user.passowrd = senha;
-        // await doLogin(user);
-        return true;
 }
 
 
@@ -22,24 +17,38 @@ function validSenha(senha){
 
  async function login(){
         
-        const form = document.getElementById("form");
-        const formData = new FormData(form);
-        const email = formData.get("email");
-        const senha = formData.get("senha");
+        const email =  document.getElementById("email").value;
+        const senha = document.getElementById("senha").value;
+        const body = { email:email, senha: senha}
+       
 
         try {
         
              if(!validEmail(email)){ throw new Error("EMAIL INVALIDO!")};
              if(!validSenha(senha)){ throw new Error("SENHA INVALIDA!")};
-             await loginUsuario(email,senha);
-             window.location.href="./artigos.html";
+             const result = await fetch(server+"/login",{
+                method: "POST", 
+                headers: {
+                    
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                 body: JSON.stringify(body),
+                });
 
+             if(result.status != 200){ throw new Error("USUARIO OU SENHA INVALIDO!")};
+              window.location.href="./artigos.html";
          }catch(error){
              alerte(error.message || "ERRO NO SERVIDOR!")             
          }
                 
-
 }
+
+document.getElementById('entrar').onclick = function(){
+    login();
+}
+
+export default login;
 
 
 

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_artigos.css">
     <title>ARTIGOS</title>
-   <script src="../scripts/artigos.js"></script>
+   <script type="module" src="../scripts/artigos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <script>
       //  alert("validação Necessaria");
    
@@ -30,7 +31,7 @@
    
     <form action="">
         <input class="texto" type="text" name="artigo" id="artigo" aria-label="DIGITE O NOME DO ARTIGO" placeholder="DIGITE O ARTIGO">
-        <button type="button" onclick="buscarArtigo()" >Pesquisar</button>
+        <button type="button" id="pesquisar" >Pesquisar</button>
     </form>
     
 

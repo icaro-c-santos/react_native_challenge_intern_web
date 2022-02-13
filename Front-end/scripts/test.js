@@ -1,7 +1,6 @@
-
-const user = "ICARO";
-
-user.senha = 8245;
+import axios from "";
 
 
-console.log(user.senha);
+const na = 3;
+
+export default na;
