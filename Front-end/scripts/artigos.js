@@ -16,11 +16,30 @@ const artigo = {
 }
 
 
-    const titulo = document.createElement("h3").innerText= "DATA: "+ artigo.date;
-    const link = document.createElement("a").href = ""+url+artigo.url+"";
-    document.getElementById("artigosTela").append(titulo);
-    document.getElementById("artigosTela").append(link);
-    document.getElementById("artigosTela").innerHTML = artigo.content;
+
+
+    const dataArtigo = document.createElement("div");
+    const uriArtigo = document.createElement("div");
+    const contentArtigo = document.createElement("div");
+
+    dataArtigo.setAttribute("id","dataArtigo");
+    uriArtigo.setAttribute("id","uriArtigo");
+    contentArtigo.setAttribute("id","contentArtigo");
+
+
+    dataArtigo.innerText = "DATA: "+ artigo.date;
+    uriArtigo.innerText  = "URL: "+url+artigo.url;
+    contentArtigo.innerHTML = "TEXTO:"+artigo.content;
+
+
+    //const link = document.createElement("a").href = ""+url+artigo.url+"";
+
+    document.getElementById("artigosTela").append(dataArtigo);
+    document.getElementById("artigosTela").append(uriArtigo);
+    document.getElementById("artigosTela").append(contentArtigo);
+
+
+
 
 
 

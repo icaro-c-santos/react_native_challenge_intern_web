@@ -24,16 +24,14 @@ app.post("/cadastro",async(req,res,next)=>{
     const senha = req.body.senha;
     const nome = req.body.nome;
 
-   const novoUsuario = {
+    const novoUsuario = {
         email:email,
         senha: senha,
         nome: nome
     }
-    console.log(novoUsuario)
 
     banco.push(novoUsuario);
     res.status(201).send();
-
 })
 
 app.post("/login",(req,res,next)=>{

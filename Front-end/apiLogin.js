@@ -17,4 +17,3 @@ async function criarUsuario(email,senha,nome){
 async function buscarUsuario(email,senha,nome){
     
 }
-export default criarUsuario;

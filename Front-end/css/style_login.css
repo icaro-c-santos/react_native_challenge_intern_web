@@ -1,0 +1,144 @@
+
+body{
+    background-color: rgb(0,80,240);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+
+}
+
+#voltar{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+#voltar >p{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#help{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+header{
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 500px;
+    margin-top: 20px;
+}
+
+#email::placeholder,#senha::placeholder{
+    color: rgb(204, 204, 204);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+#email,#senha{
+    background-color: transparent;
+    color: rgb(255, 249, 249);;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+#entrar{
+    background-color: white;
+    height: 60px;
+    color:  rgb(0,80,240);
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+#entrar:hover{
+    background-color: rgb(219, 212, 212);
+    transition: 0.5s;
+    cursor: pointer;
+  
+}
+
+#carregar{
+    animation-name: load;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 40px;
+    margin: auto;
+}
+
+p{
+    color: rgb(235, 230, 230);
+    text-align: center;
+    margin-top: 0px;
+    font-size: 25px;
+}
+p >a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p >a:hover{
+    cursor: pointer;
+}
+
+@keyframes load {
+
+        from {
+            transform: rotateZ(0);
+        }
+        to {
+            transform: rotateZ(360deg);
+        }
+}
+
+
+
+@media (max-width: 600px)
+{
+    
+    #help{
+        font-size: 16px;
+    }
+
+    #voltar >p{
+        
+        font-size: 20px;
+    
+    }
+    #cadastro{
+        font-size: 18px;
+        margin: 0px 20px;
+    }
+    form{
+        margin: 25px 50px 0px 50px;
+        width: 60vw;
+    }
+    #email::placeholder,#senha::placeholder,#nome::placeholder{
+        font-weight: bold;
+        font-size: 15px;
+      }
+    #email,#senha,#nome,#entrar{
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+

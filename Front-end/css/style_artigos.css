@@ -56,11 +56,15 @@ button{
     color: black;
     padding: 10px;
 }
-#artigosTela > h1{
+#titulo{
     font-size: 30px;
     text-align: center;
+    color: blue;
     
 }
+
+
+
 @media (max-width: 500px)
 {
 
