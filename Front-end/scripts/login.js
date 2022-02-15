@@ -1,11 +1,12 @@
-const server = "http://localhost:3002";
+const server = "http://localhost:3002";   ///u
 
-function alerte(mensagem){
-        
-    const alert = document.getElementById("help");
-    alert.innerText = mensagem;
-    window.scrollTo(0,400);
-  }
+    function alerte(mensagem) {
+
+        const alert = document.getElementsByClassName("help")[0];
+        alert.setAttribute("id","help");
+        alert.innerText = mensagem;
+    }
+    
 
 
     function validEmail(email){
@@ -36,7 +37,7 @@ function alerte(mensagem){
                     'Accept': 'application/json'
                 },
                  body: JSON.stringify(body),
-                });
+                }).catch(error => {throw new Error("ERRO NO SERVIDOR!: TENTE MAIS TARDE.")});
 
              if(result.status != 200){ throw new Error("USUARIO OU SENHA INVALIDO!")};
              return true;
@@ -66,8 +67,8 @@ function alerte(mensagem){
         form.append(nodeImg);
 
         login().then(e => window.location.href="./artigos.html")
-        .catch( error =>alerte(error.message || "ERRO NO SERVIDOR!"))
-        .finally(()=>{
+        .catch( error =>{
+            alerte(error.message || "ERRO NO SERVIDOR!");
             form.removeChild(nodeImg);
             senha.value = "";
             email.removeAttribute("readOnly");

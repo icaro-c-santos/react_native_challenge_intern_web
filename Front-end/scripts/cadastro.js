@@ -3,9 +3,16 @@ const server = "http://localhost:3002";
 
 function alerte(mensagem) {
 
-    const alert = document.getElementById("help");
+    const alert = document.getElementsByClassName("help")[0];
+    alert.setAttribute("id","help");
     alert.innerText = mensagem;
-    window.scrollTo(0, 400);
+}
+
+function alertSucesso(mensagem){
+    
+    const alert = document.getElementsByClassName("help")[0];
+    alert.setAttribute("id","helpSucesso");
+    alert.innerText = mensagem;
 }
 
 
@@ -32,7 +39,7 @@ async function cadastro() {
     try {
         if (!validNome(nome)) { throw new Error("PREENCHA O CAMPO NOME!") };
         if (!validEmail(email)) { throw new Error("FORMATO DE EMAIL INVALIDO!") };
-        if (!validSenha(senha)) { throw new Error("FORMATO DE SENHA INVALIDO! \nDIGITE  8 DIGITOS OU MAIS CONTENDO PELO MENOS: \n1 NUMERO \n1 CARACTERE ESPECIAL DO TIPO !@$%&*-+ \n1 CARACTERE MINUSCULO. \n1 CARACTERE MAIUSCULO.") };
+        if (!validSenha(senha)) { throw new Error("A senha deve conter 8 digitos ou mais e pelo menos:\n1 - Número \n1 - Caractere do tipo: !@$%&*-+ \n1 - Caractere maiúsculo \n1 - Caractere minúsculo") };
         const result = await fetch(server + "/cadastro", {
             method: "POST",
             headers: {
@@ -41,7 +48,7 @@ async function cadastro() {
                 'Accept': 'application/json'
             },
             body: JSON.stringify(body),
-        });
+        }).catch(error => {throw new Error("ERRO NO SERVIDOR!: USUARIO NÃO CRIADO!")});
         if (result.status != 201) { throw new Error("ERRO!: USUARIO NÃO CRIADO!") };
         return true;
     } catch (error) {
@@ -71,12 +78,12 @@ document.getElementById('entrar').onclick = function () {
     nodeImg.setAttribute("src", "../pictures/carregar.png");
     form.append(nodeImg);
 
-    cadastro().then(e => {
-        alerte("USUARIO CADASTRADO COM SUCESSO!");
-        window.location.href = "./login.html"
-    })
-        .catch(error => alerte(error.message || "ERRO NO SERVIDOR!"))
-        .finally(() => {
+    cadastro().then(res => {
+        alertSucesso("USUARIO CADASTRADO COM SUCESSO!");
+        form.removeChild(nodeImg);
+        setTimeout(() => {window.location.href = "./login.html"},2000);
+    }).catch(error => {
+            alerte(error.message || "ERRO NO SERVIDOR!")
             form.removeChild(nodeImg);
             senha.value = "";
             nome.removeAttribute("readOnly");
@@ -86,7 +93,6 @@ document.getElementById('entrar').onclick = function () {
         });
 
 }
-
 
 
 export default cadastro;

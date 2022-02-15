@@ -1,6 +1,9 @@
 import  express from "express";
-import axios from "axios";
 import cors from "cors";
+import fetch from "node-fetch";
+
+const PORTA  = 3002;  //DEFINIR PORTA
+
 
 const app = express();
 const url = 'https://www.healthcare.gov/api/articles.json';
@@ -39,7 +42,6 @@ app.post("/login",(req,res,next)=>{
     const email = req.body.email;
     const senha = req.body.senha;
     const result =  banco.filter(user => user.email == email && user.senha == senha);
-   console.log(banco);
     if(result.length>0){
         res.status(200).json("USUARIO LOGADO!");
     }else{
@@ -49,14 +51,23 @@ app.post("/login",(req,res,next)=>{
 })
    
 app.get("/artigos",async (req,res,next)=>{
-    
-    const artigos = await axios.get(url).then(res => res.data);
-    
-    res.status(200).json(artigos);
+
+        const result = await fetch("https://www.healthcare.gov/api/articles.json",{
+          method: "GET", 
+          headers: {
+              
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          })
+      
+       const retorno =   await result.json();
+       res.status(200).json(retorno);
+       
 })
 
 
-app.listen(3002,() =>{
+app.listen(PORTA,() =>{
     console.log("SERVIDOR ATIVO!");
 });
 

@@ -5,20 +5,19 @@ body{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-bottom: 180px;
 }
 
 header{
-
-    font-size: 2em;
+    font-size: 30px;
     font-weight: 700;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
+
 h1{
-    margin-top: 0px;
+    margin: 0px 30px 20px 30px;
 }
 .voltar{
     width: 100%;
@@ -33,11 +32,11 @@ h1{
     font-weight: bold;
 }
 
-.texto::placeholder{
+#texto::placeholder{
    text-align: center;
    font-size: 20px;
 }
-.texto{
+#texto{
     width: 400px;
     height: 50px;
     font-size: 22px;
@@ -48,25 +47,92 @@ button{
     height: 50px;
 }
 
-#artigosTela{
-    font-size: 20px;
-    text-align: justify;
-    justify-content: center;
-    background-color: bisque;
+main{
+   margin: 80px 0px 0px 0px;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+}
+
+#artigo{
+    transition: 0.5s;
+    border: 8px double black;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    box-shadow: rgba(5, 5, 5, 0.699) 1px 12px 20px;
     color: black;
-    padding: 10px;
+    background-color: antiquewhite;
+    overflow: auto;
+    margin:25px  10px;
 }
+
+#link{
+    text-decoration: none;
+}
+
+
+#artigo:hover{
+    background-color: black;
+    border: 8px double rebeccapurple;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#artigo:active{
+    background-color: rgb(90, 88, 88);
+}
+
+#data{
+    margin: -10px -10px 20px 0px;
+    align-self: flex-end;
+}
+
 #titulo{
-    font-size: 30px;
     text-align: center;
-    color: blue;
-    
+    font-size: 22px;
+}
+
+#artigo >p{
+    text-align: center;
 }
 
 
-
-@media (max-width: 500px)
+@media (max-width: 600px)
 {
+    header{
+        font-size: 4vw;
+    }
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    #texto{
+        margin:20px 20px;
+        width: auto;
+    }
+    .voltar>p{
+        font-size: 24px;
+    }
+    #artigo{
+        padding: 10px 5px 10px 10px;
+        width: 250px;
+    }
+    #titulo{
+        font-size: 18px;
+    }   
+    #data{
+        font-size: 20px;
+        font-weight: 50;
+        margin: 0px;
+    }
+}
 
-
+footer{
+    height: 100px;
 }

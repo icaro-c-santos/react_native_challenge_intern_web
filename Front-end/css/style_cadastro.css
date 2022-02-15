@@ -25,10 +25,26 @@ body{
 
 #help{
     font-size: 20px;
-    color: red;
+    color: rgb(236, 0, 0);
     font-weight: bold;
-    margin: 20px 20px 20px 20px;
-    text-align: center
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border: dotted;
+    background-color: rgb(245, 239, 239);
+     
+}
+#helpSucesso{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border: dotted;
+    color: #06e95d;
+    background-color: rgba(3, 3, 3, 0.651);
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
 header{
@@ -108,7 +124,7 @@ form{
 @media (max-width: 600px)
 {
     
-    #help{
+    #help, #helpSucesso{
         font-size: 16px;
     }
 
@@ -117,7 +133,7 @@ form{
     }
     #termos{
      font-size:18px;
-     margin: 0px 20px 0px 20px;
+     margin: 20px 20px 0px 20px;
     }
 
     form{
@@ -143,6 +159,9 @@ form{
 {
     #voltar >p{
         font-size: 18px;
+    }
+    #help,#helpSucesso{
+        font-size: 12px;
     }
     #termos{
         font-size: 16px;
