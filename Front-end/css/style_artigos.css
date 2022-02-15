@@ -3,20 +3,18 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
 }
 
 header{
-    font-size: 30px;
+    text-align: center;
+}
+
+h1{
     font-weight: 700;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-
-
-h1{
+    font-size: 30px;
     margin: 0px 30px 20px 30px;
 }
 .voltar{
@@ -34,39 +32,78 @@ h1{
 
 #texto::placeholder{
    text-align: center;
-   font-size: 20px;
-}
-#texto{
-    width: 400px;
-    height: 50px;
-    font-size: 22px;
+   font-size: 18px;
 }
 
-button{
+#texto{
+    width: 380px;
+    height: 36.5px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#filtro{
+    height: 41px;
+    background-color: rgb(239,239,239);
+    color: black;
+    width: 60px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#campoTexto{
+    display: flex;
+    flex-direction: row;
+}
+
+#textoData{
+    display: flex;
+    font-size: 20px;
+    height: 36px;
+    margin: 0px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#pesquisar{
     width: 100px;
-    height: 50px;
+    height: 41px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 main{
-   margin: 80px 0px 0px 0px;
    display: flex;
    flex-flow: row wrap;
    justify-content: space-evenly;
+   margin: 22px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 #artigo{
+
     transition: 0.5s;
     border: 8px double black;
     display: flex;
     flex-flow: column nowrap;
-    width: 350px;
-    height: 200px;
-    padding: 20px;
+    padding: 0px 10px;
+    width: 300px;
+    height: 180px;
     box-shadow: rgba(5, 5, 5, 0.699) 1px 12px 20px;
     color: black;
     background-color: antiquewhite;
     overflow: auto;
-    margin:25px  10px;
+    margin:25px 20px;
 }
 
 #link{
@@ -88,13 +125,15 @@ main{
 }
 
 #data{
-    margin: -10px -10px 20px 0px;
+    margin: 5px 5px 0px 0px;
     align-self: flex-end;
+    -ms-align-self: flex-end; 
+    font-size: 14px;
 }
 
 #titulo{
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #artigo >p{
@@ -104,24 +143,37 @@ main{
 
 @media (max-width: 600px)
 {
-    header{
-        font-size: 4vw;
+
+    h1{
+        font-size: 5vw; 
+        margin: 20px 0px 0 0px;
     }
     form{
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        margin-bottom: 0px;
     }
     #texto{
         margin:20px 20px;
-        width: auto;
+        width: 250px;
+        height: 32px;
     }
+
+    #texto::placeholder{
+        font-size: 14px;
+    }
+
     .voltar>p{
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    #pesquisar{
+        height: 30px;
     }
     #artigo{
         padding: 10px 5px 10px 10px;
-        width: 250px;
+        margin-top: 30px;
     }
     #titulo{
         font-size: 18px;
@@ -131,8 +183,85 @@ main{
         font-weight: 50;
         margin: 0px;
     }
+
+    #filtro{
+        height: 41px;
+        margin-right: 30px;
+    }
+    
+    #campoTexto{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    #textoData{
+        display: flex;
+        font-size: 20px;
+        height: 36px;
+        margin: 10px 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    #pesquisar{
+        width: 100px;
+        height: 41px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    
+    
 }
 
-footer{
-    height: 100px;
+
+@media (max-width: 400px)
+{
+    header{
+        font-size: 4vw;
+    }
+    form{
+        flex-flow: column nowrap;
+    }
+    #texto{
+        width: 200px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .voltar>p{
+        font-size: 15px;
+    }
+    main{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #texto::placeholder{
+        font-size: 14px;
+    }
+    #pesquisar{
+        height: 30px;
+    }
+    #artigo{
+        padding: 10px 5px 10px 10px;
+        width: 200px;
+        height: auto;
+        margin: 10px 0px;
+    }
+    #titulo{
+        font-size: 16px;
+    }   
+    #data{
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0px;
+    }
+    #filtro{
+        height: 30px;
+    }
+    #textoData{
+        height: 25px;
+    }
+
+    
 }
+

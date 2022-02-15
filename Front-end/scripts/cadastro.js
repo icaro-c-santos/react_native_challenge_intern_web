@@ -58,8 +58,9 @@ async function cadastro() {
 
 }
 
+ 
 
-document.getElementById('entrar').onclick = function () {
+document.getElementById('entrar').onclick = function () { 
 
     const form = document.getElementById("form");
     const botaoFinalizar = document.getElementById('entrar');

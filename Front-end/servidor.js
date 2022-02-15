@@ -68,6 +68,6 @@ app.get("/artigos",async (req,res,next)=>{
 
 
 app.listen(PORTA,() =>{
-    console.log("SERVIDOR ATIVO!");
+    console.log("SERVIDOR ATIVO NA PORTA "+PORTA);
 });
 

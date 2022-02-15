@@ -10,10 +10,8 @@
   "author": "\"ICARO-SANTOS\"",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.25.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "json-array-converter": "^1.0.3",
     "node-fetch": "^3.2.0"
   },
   "type": "module"
